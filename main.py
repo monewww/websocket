@@ -3,8 +3,9 @@ import time
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-ip_adress='124.71.100.30'
+ip_adress=socket.gethostname()
 port=6666
+server_socket.setblocking(False)
 server_socket.bind((ip_adress,port))
 server_socket.listen()
 while True:
