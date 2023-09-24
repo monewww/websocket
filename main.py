@@ -1,7 +1,7 @@
 import socket
 import time
 
-server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket = socket.socket()
 
 ip_adress=socket.gethostname()
 port=6666
