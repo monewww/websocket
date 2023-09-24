@@ -3,7 +3,7 @@ import time
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-ip_adress='192.168.0.205'
+ip_adress='localhost'
 port=6666
 server_socket.bind((ip_adress,port))
 server_socket.setblocking(False)
